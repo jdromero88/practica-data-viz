@@ -1,0 +1,21 @@
+{
+  "name": "futbol-paraguayo",
+  "version": "1.0.0",
+  "description": "Estadisticas del futbol Paraguayo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass --watch ./assets/css/main.scss ./assets/css/main.css"
+  },
+  "keywords": [
+    "futbol",
+    "Paraguay",
+    "campeonatos",
+    "campeones"
+  ],
+  "author": "Jose Romero",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.32.7"
+  }
+}
