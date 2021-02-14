@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campeonato Paraguayo</title>
+    <!-- DataTables css -->
+    <link rel="stylesheet" type="text/css"
+      href="https://cdn.datatables.net/v/dt/dt-1.10.20/r-2.2.3/datatables.min.css"
+    />
+    <!-- Local CSS -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>Inicio</li>
+        <li>Datos</li>
+        <li>Nosotros</li>
+        <li>Contacto</li>
+      </ul>
+    </nav>
+    <main class="index">
+      <section>
+        <h1 class="center">Campeonato Paraguayo</h1>
+          <table id="table" class="display">
+            <tfoot>
+              <tr>
+                <td colspan="3" class="credits"><a href="https://www.apf.org.py/p/estadisticas-de-todos-los-clubes-en-la-historia">Asociación Paraguaya de Fútbol</a></td>
+              </tr>
+            </tfoot>
+          </table>
+      </section>
+    </main>
+    <footer>
+      <p><time id="currentYear"></time> &#169; Developer by <a href="https://josedromero.com" target="_blank">José Romero</a></p>
+    </footer>
+    <!-- JQuery CDN from Google Hosted Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- DataTables.net library -->
+    <script
+      type="text/javascript"
+      src="https://cdn.datatables.net/v/dt/dt-1.10.20/r-2.2.3/datatables.min.js"
+    ></script>
+    <!-- Papa parse -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+    <!-- Import local js file -->
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
