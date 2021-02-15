@@ -10,6 +10,7 @@
 }
 .menu ul {
   display: inline-flex;
+  font-size: 1.2rem;
 }
 .menu li + li {
   line-height: 1.3;
