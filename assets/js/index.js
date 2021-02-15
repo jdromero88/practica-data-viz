@@ -42,7 +42,7 @@ function displayInfo(dataset) {
     info: false,
     order: [],
     // columnDefs: [
-    //   { width: "10%", targets: [1, 2, 3, 4] }
+    //   { width: "30%", targets: [1, 2, 3] }
     // ]
   });
 

@@ -1,0 +1,48 @@
+.index {
+  color: $color-negro;
+
+  h1 {
+    color: $color-rojo-90;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .right {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .credits {
+    font-size: 9px;
+    text-align: end;
+    width: 100%;
+  }
+
+  // scss-lint:disable IdSelector
+  #table {
+    line-height: 1.2;
+    max-width: 800px;
+  }
+
+  // scss-lint:disable IdSelector, SelectorFormat
+  #table_filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  thead {
+    background-color: $color-rojo-70;
+    color: $color-blanco;
+  }
+  // scss-lint:disable QualifyingElement, SelectorDepth
+  tbody tr.odd,
+  tbody tr.odd,
+  tbody tr.even {
+    font-family: 'Roboto', sans-serif;
+  }
+}
