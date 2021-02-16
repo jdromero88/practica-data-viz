@@ -3,9 +3,30 @@
   "version": "1.0.0",
   "description": "Estadisticas del futbol Paraguayo.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdromero88/practica-data-viz"
+  },
+  "lint-staged": {
+    "*.{js,tsx}": [
+      "./node_modules/.bin/eslint --fix"
+    ],
+    "*.{scss,less,sass,css}": [
+      "./node_modules/.bin/stylelint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sass --watch ./src/assets/scss/main.scss ./src/assets/scss/main.css"
+    "lint-css": "npx stylelint \"**/*.scss\" ",
+    "css-build": "sass ./src/assets/scss/main.scss ./src/assets/scss/main.css",
+    "css-watch": "sass --watch ./src/assets/scss/main.scss ./src/assets/scss/main.css",
+    "dev": "npm-run-all --parallel css-watch",
+    "start": "npm run dev"
   },
   "keywords": [
     "futbol",
@@ -15,7 +36,15 @@
   ],
   "author": "Jose Romero",
   "license": "ISC",
-  "dependencies": {
-    "sass": "^1.32.7"
+  "devDependencies": {
+    "sass": "^1.32.7",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.4",
+    "npm-run-all": "^4.1.5",
+    "stylelint": "^13.10.0",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.17.1"
   }
 }
