@@ -10,10 +10,10 @@
   <!-- Google Fonts  -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
-  <!-- CSS for DataTables  -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/r-2.2.3/datatables.min.css" />
+
   <!-- CSS Local -->
   <link href="assets/scss/main.css" rel="stylesheet" />
+  <link href="assets/scss/campeonatos.css" rel="stylesheet" />
 
 </head>
 
@@ -29,6 +29,15 @@
   <main class="index">
     <section>
       <h1 class="center">Lista de los Campeones del Fútbol Paraguayo.</h1>
+      <figure class="highcharts-figure">
+          <div id="container"></div>
+          <p class="highcharts-description">
+              Charts can be styled using CSS, allowing designers and
+              developers to more easily collaborate on chart configuration.
+              This example shows how the base Highcharts styling is imported
+              using CSS, and modified without the need for Javascript.
+          </p>
+      </figure>
     </section>
   </main>
   <footer>
@@ -38,6 +47,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Papa parse -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+
+  <!-- higcharts -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
   <!-- Import local js file -->
   <script src="assets/js/index.js"></script>
   <script src="assets/js/campeonatos.js"></script>
